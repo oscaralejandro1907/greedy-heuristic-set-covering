@@ -1,3 +1,14 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿namespace SetCovering
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Data data = new Data();
+            GreedyHeuristic heur = new GreedyHeuristic(data);
+            Console.WriteLine("Hello, World!");
+        }
+    }
+}
 
-Console.WriteLine("Hello, World!");
+//https://www.youtube.com/watch?v=Hw_IAYqtrLI

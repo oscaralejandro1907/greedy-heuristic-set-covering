@@ -4,14 +4,15 @@ public class Center
 {
     public string Id { get; set; }
     public int Cost { get; set; }
-    public Dictionary<string,int> DictDistanceToRegion { get; set; }
-    public List<int> ListCoveredRegions { get; set; }
+    public string BelongingRegion { get; set; }
+    public List<Region> ListCoveredRegions { get; set; } //If installed, this center can cover these regions
+    public double Ratio { get; set; }
 
-    public Center(string id, int cost)
+    public Center(string id, string region,int cost)
     {
         Id = id;
+        BelongingRegion = region;
         Cost = cost;
-        DictDistanceToRegion = new Dictionary<string, int>();
-        ListCoveredRegions = new List<int>();
+        ListCoveredRegions = new List<Region>();
     }
 }
