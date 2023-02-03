@@ -102,7 +102,7 @@ public class Data
         ListCenters.Add(c7);
         
         DetermineCoverParameter();
-        DetermineCentersCovering();
+        DetermineCentersCoveredRegions();
     }
 
     public void DetermineCoverParameter()
@@ -119,7 +119,7 @@ public class Data
         }
     }
 
-    public void DetermineCentersCovering()
+    public void DetermineCentersCoveredRegions()
     {
         foreach (var center in ListCenters)
         {

@@ -5,8 +5,9 @@
         static void Main(string[] args)
         {
             Data data = new Data();
-            GreedyHeuristic heur = new GreedyHeuristic(data);
-            Console.WriteLine("Hello, World!");
+            GreedyHeuristic heuristic = new GreedyHeuristic(data);
+            heuristic.Solve();
+            heuristic.Print();
         }
     }
 }
